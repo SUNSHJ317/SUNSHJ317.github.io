@@ -25,6 +25,26 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Music-->
+    <link rel="stylesheet" href="lib\APlayer\dist\APlayer.min.css">
+    <script src="lib\APlayer\dist\APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <div class="aplayer" data-global="true" data-id="5464313037" data-server="netease" data-type="playlist"
+        data-fixed="true" data-listFolded="true" data-autoplay="true" data-order="list" data-volume="0.5"
+        data-theme="#cc543a" data-preload="auto">
+    </div>
+    <style type="text/css">
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+            left: -66px !important
+        }
+     
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+            left: 0 !important
+        }
+    </style>
+    
+
+
 </head>
 
 <body id="page-top">
@@ -420,23 +440,28 @@
         position: absolute;
         z-index: 99;
     }
+
     @keyframes textPopup {
-        0%, 100% {
+
+        0%,
+        100% {
             opacity: 0;
         }
+
         5% {
             opacity: 1;
         }
+
         100% {
-            transform: translateY(-50px);    
+            transform: translateY(-50px);
         }
     }
-    </style>
-    <script>
+</style>
+<script>
     var fnTextPopup = function (arr, options) {
         // arr参数是必须的
         if (!arr || !arr.length) {
-            return;    
+            return;
         }
         // 主逻辑
         var index = 0;
@@ -460,9 +485,10 @@
             eleText.style.top = (y - eleText.clientHeight) + 'px';
             // index递增
             index++;
-        });    
+        });
     };
-    
+
     fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
-    </script>
+</script>
+
 </html>
