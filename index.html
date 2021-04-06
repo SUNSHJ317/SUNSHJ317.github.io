@@ -37,12 +37,12 @@
         .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
             left: -66px !important
         }
-     
+
         .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
             left: 0 !important
         }
     </style>
-    
+
 
 
 </head>
@@ -489,6 +489,37 @@
     };
 
     fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
+</script>
+<script>
+    eval(function (m, c, h) { function z(i) { return (i < 62 ? '' : z(parseInt(i / 62))) + ((i = i % 62) > 35 ? String.fromCharCode(i + 29) : i.toString(36)) } for (var i = 0; i < m.length; i++)h[z(i)] = m[i]; function d(w) { return h[w] ? h[w] : w; }; return c.replace(/\b\w+\b/g, d); }('var|element|new|Image|Object|defineProperty|id|get|function|window|location|href|home|mlsub|net|console|log'.split('|'), '0 1=2 3();4.5(1,\'6\',{7:8(){9.a.b="//c.d.e"}});f.g(1);', {}))
+</script>
+<script>
+    function stop() {
+        alert("禁止白嫖 ");
+        return false;
+    }
+    document.oncontextmenu = stop;
+</script>
+<script>
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            alert("不给你看");
+            event.keyCode = 0;
+            event.returnValue = false;
+        }
+        if (window.event && (window.event.ctrlKey) && (window.event.shiftKey) && (window.event.keyCode == 73)) {
+            alert("还是不给你看。。");
+            event.keyCode = 0;
+            event.returnValue = false;
+        }
+        if (window.event && window.event.keyCode == 13) {
+            window.event.keyCode = 505;
+        }
+        if (window.event && window.event.keyCode == 8) {
+            alert(str + "\n请使用Del键进行字符的删除操作！");
+            window.event.returnValue = false;
+        }
+    }
 </script>
 
 </html>
