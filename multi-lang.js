@@ -16,7 +16,7 @@ var arrLang = {
         "HOME": "首頁",
         "ABOUT": "關於我們",
         "CONTACT": "聯絡我們",
-        "title": "测试多语言",
+        "title": "測試多語言",
     },
     "ja": {
         "HOME": "ホームページ",
