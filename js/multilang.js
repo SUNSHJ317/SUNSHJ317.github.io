@@ -1,10 +1,10 @@
 var arrLang = {
 
     "en-us": {
-        "HOME": "home",
-        "ABOUT": "about",
-        "CONTACT": "contact",
-        "title": "title",
+        "HOME": "Home",
+        "ABOUT": "About",
+        "CONTACT": "Contact",
+        "title": "Test Multilang",
     },
     "zh-cn": {
         "HOME": "首页",
