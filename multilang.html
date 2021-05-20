@@ -1,19 +1,53 @@
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
+<html lang="zh-cn">
+
 
 <head>
-    <script src="js/multilang.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.3.js" type="text/javascript"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multilang</title>
+    <style>
+        p {
+            margin: 100px;
+            padding: 10px;
+        }
+
+        .textheader,
+        a {
+            padding: 10px;
+            text-decoration-line: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
     <button class="translate" id="en-us">English</button>
     <button class="translate" id="zh-cn">简体中文</button>
     <button class="translate" id="zh-tw">繁體中文</button>
     <button class="translate" id="ja">日本語</button>
+    <div class="textheader">
+        <a href="#">
+            <h1 class="lang" key="title" style="display: inline-table;"></h1>
+        </a>
+        <a href="https://sunshj.top">
+            <h3 class="lang" key="HOME" style="display: inline-table;"></h3>
+        </a>
+        <a href="http://me.sunshj.top/s/about">
+            <h3 class="lang" key="ABOUT" style="display: inline-table;"></h3>
+        </a>
+        <a href="https://sunshj.top/mail.html">
+            <h3 class="lang" key="CONTACT" style="display: inline-table;"></h3>
+        </a>
+    </div>
+    <p class="lang" key="text"></p>
 
-    <li class="lang" key="HOME"></li>
-    <li class="lang" key="ABOUT"></li>
-    <li class="lang" key="CONTACT"></li>
-    <h1 class="lang" key="title"></h1>
-</head>
+
+</body>
+<script src="js/multilang.js" type="text/javascript"></script>
 
 </html>
